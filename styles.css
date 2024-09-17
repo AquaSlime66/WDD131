@@ -1,0 +1,19 @@
+body {
+    font-size: 20px;
+    margin: 0;
+    height: 100%;
+}
+
+main {
+    background-color: #89fe48;
+    height: 100vh;
+}
+
+.green {
+    color: whitesmoke;
+}
+
+footer p {
+    font-size: .8m;
+    color: blueviolet;
+}
