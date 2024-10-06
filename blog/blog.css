@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Cutive+Mono&family=Fuzzy+Bubbles:wght@400;700&family=Gochi+Hand&family=Nanum+Brush+Script&display=swap');
+
+
+body {
+    background-color: #ADFCF9;
+    color: #4B644A;
+    font-family: 'Cutive Mono';
+
+    margin: 0 auto;
+}
+
+/* header elementst */
+.navbar {
+    display: grid;
+    grid-template-columns: repeat(3, min-content);
+    justify-content: end;
+    justify-items: end;
+    list-style: none;
+    border-top: 3px solid #5d108a;
+    border-bottom: 3px solid #5d108a;
+    padding-right: 10em;
+}
+.navbar li {
+    padding: 1.5em;
+    font-size: 2em;
+    font-weight: bold;
+}
+
+li a {
+    text-decoration: none;
+    color: #4B644A;
+}
+
+header h1{
+    font-size: 3.5em;
+    text-align: center;
+    padding: 1.5em;
+}
+
+.skiptocontent a {
+    position: absolute;
+    top: -80px;
+    background-color: #4B644A;
+    color: #ADFCF9;
+    font-size: 3em;
+}
+
+.skiptocontent a:focus {
+    top: 0;
+}
+
+
+
+
+/* main element modifications */
+main {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    
+}
+
+.article-holding {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+}
+
+h2 {
+    margin-top: 15px;
+    color: #5d108a;
+    font-size: 3em;
+}
+
+.leftbar ul li {
+    list-style: none;
+    padding: 10px;
+    font-size: 1.65em;
+}
+
+ul li.date {
+    font-size: 2em;
+}
+
+.leftbar {
+    text-align: right;
+    padding-right: 30px;
+    margin-right: 30px;
+    border-right: 3px solid #5d108a;
+    
+}
+
+.leftbar, .book-central-bar {
+    margin-top: 60px;
+}
+
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.filter-bar {
+    border: 3px solid #5d108a;
+    margin-top: 60px;
+    padding-top: 20px;
+}
