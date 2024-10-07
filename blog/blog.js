@@ -27,6 +27,19 @@ const articleChunky = [
 		ages: '16-25',
 		genre: 'Space Fantasy',
 		stars: '⭐⭐⭐⭐'
+	},
+
+	{
+		title: 'Ascension of Flesh and Steel: A Manifesto for the Unified Future',
+		date: 'August 12, 2096',
+		description:
+			'Richard Grey outlines his vision of humanitys evolution through mutation and forced unity, arguing that only by merging the strengths of all life forms into one superior being can true survival and peace be achieved in the post-apocalyptic world.' ,
+		imgSrc:
+			'master-book1.webp',
+		imgAlt: 'Ascension of Flesh and Steel: A Manifesto for the Unified Future',
+		ages: '10-17.5',
+		genre: 'Autobiography',
+		stars: '⭐⭐⭐⭐⭐'
 	}
 ]
 
