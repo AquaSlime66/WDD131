@@ -1,0 +1,39 @@
+<!-- form-demo.html -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Checkout Form</title>
+    <link rel="stylesheet" href="form-demo.css" />
+    <script src="form-demo.js" defer></script>
+  </head>
+  <body>
+    <header><h1>Checkout</h1></header>
+    <main>
+      <section class="errors"></section>
+      <form id="checkoutForm" action="completed.html" class="formClass">
+        <label for="name">Full Name:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">Email:</label>
+        <input type="text" id="email" name="email" required>
+
+        <label for="address">Address:</label>
+        <textarea name="address" id="address" rows="3"></textarea>
+
+        <label for="payment">Payment Method:</label>
+        <select name="payment" id="payment">
+            <option value="" disabled selected>Select Payment Method</option> <!-- Placeholder option -->
+            <option value="ae">American Express</option>
+            <option value="gesa">Gesa Credit Union</option>
+        </select>
+
+        <label for="ccnum">Credit Card Number</label>
+        <input type="number" name="ccnum" id="ccnum" pattern="[0-9]{16}">
+        
+        <button>Click Here</button>
+      </form>
+    </main>
+  </body>
+</html>
