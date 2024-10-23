@@ -1,0 +1,9 @@
+domain specific, the first part of a web address; that's the domain
+
+- local storage stays until you clear your cache
+- browser specific, limit of 5MB per key, local storage is a key value storage system
+- technically not javascript; browser api (like document.query selector or event listener)
+- browser apis are accessed with callbacks
+- javascript object notation? JSON 
+
+- CHECK application in chromium editor, storage session/local storage/cookies will hold local storage variables or items

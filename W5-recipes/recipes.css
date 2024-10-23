@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/* global styles, applied to everything */
+header h1, main h1{
+    font-family: Kanit;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+/* header stuff */
+header {
+    display: flex;
+    padding-bottom: 100px;
+    padding-top: 50px;
+    
+    
+    justify-content: center;
+}
+
+header img {
+    max-width: 25%;
+}
+
+header h1{
+    font-size: 4em;
+}
+
+
+
+/* body */
+
+main input {
+    font-size: 30px;
+}
+
+form {
+    text-align: center;
+    padding-bottom: 75px;
+    border-bottom: 2.5px solid grey;
+}
+
+button img {
+    width: 30px;
+}
+
+.recipe-holding-cell {
+    padding-top: 20px;
+    margin: 15px;
+    border: 2.5px solid black;
+    border-radius: 12px;
+}
+
+.recipe-holding-cell img {
+    padding-top: 25px;
+    width: 550px;
+    display: block;
+    margin: 0 auto;
+}
+
+.recipe-holding-cell ul {
+    display: flex;
+    padding-left: 75px;
+    /* justify-content: space-between; */
+}
+
+.recipe-holding-cell ul li {
+    border: 1.5px solid black;
+    list-style-type: none;
+    padding: 4px;
+    font-size: 2em;
+    margin-right: 20px;
+}
+
+.recipe-holding-cell h1 {
+    padding-left: 75px;
+}
+
+.rating{
+    padding-left: 75px;
+    margin: 0 auto;
+}
+
+
+
+/* footer and stuff */
+.social a img{
+    width: 0.6em;;
+}
