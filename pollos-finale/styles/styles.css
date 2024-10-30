@@ -1,0 +1,429 @@
+
+/* import the needed fonts */
+@font-face {
+    font-family: 'SlopMex';
+    src: url('mexican_knappett.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'BurritoDePerro';
+    src: url('ji_burrito/JI\ Burrito.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Josefin Sans';
+    font-style: normal;
+    font-weight: 100 700;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/josefinsans/v32/Qw3aZQNVED7rKGKxtqIqX5EUDXx4.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+@font-face {
+    font-family: 'Cedarville Cursive';
+    src: url('Cedarville_Cursive/CedarvilleCursive-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+/* @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap'); */
+/* https://www.dafont.com/theme.php?cat=203 */
+
+
+
+
+/* universal body styles */
+body {
+    margin: 0 auto;
+}
+
+
+
+/* header items here */
+header {
+    background-color: #9f1000;
+    font-family: SlopMex;
+    display: grid;
+    grid-template-columns: 3fr 1fr .5fr;
+    column-gap: 0px;
+}
+
+#banner-cell {
+    display: grid;
+    grid-template-rows: 1fr 5fr;
+    grid-template-columns: 1fr 15fr 1fr;
+    margin: 0 auto;
+    column-gap: 0px;
+    row-gap: 0px;
+    grid-column: 1/4;
+    grid-row: 1;
+    width: 100%;
+}
+
+#banner {
+    grid-column: 2/3;
+    width: 97%;
+    margin: 0 auto;
+    /* border-top: 10px dashed tan; */
+    border-bottom: 10px dashed tan;
+    border-left: 20px groove salmon;
+    border-right: 20px groove salmon;
+}
+
+.banner-background1, .banner-background2{
+    background-color: #9f1000;
+    width: 100%;
+    margin: 0 auto;
+    border-bottom: 20px groove salmon;
+    grid-row: 1/4;
+}
+
+.banner-background1{
+    grid-column: 1/2;
+}
+
+.banner-background2{
+    grid-column: 3/4;
+}
+
+.banner-back-top {
+    background-color: #9f1000;
+    width: 100%;
+    grid-column: 1/4;
+    grid-row: 1;
+    margin: 0 auto;
+    border-bottom: 20px groove salmon;
+}
+
+#nav-cell {
+    width: 100%;
+    padding-top: 25px;
+    padding-bottom: 15px;
+    background-color: #fccc00;
+    color: #021F59;
+    margin: 0 auto;
+    grid-row: 2;
+    grid-column: 1/4;
+}
+
+#nav-cell a {
+    padding: 25px;
+    font-size: 1.25em;
+    text-decoration: none;
+    color: inherit;
+}
+
+#nav-cell a:hover{
+    background-color: #9f1000;
+    color: white;
+}
+
+#switchingButton {
+    margin: 0 auto;
+    padding: .5%;
+    font-family: BurritoDePerro;
+    background-color: #9f1000;
+    color: aliceblue;
+    font-size: 1.25em;
+    border: 3px dotted #021F59;
+    border-radius: 15px;
+}
+
+#switchingButton:hover {
+    background-color: #021F59;
+    border-color: #9f1000;
+}
+
+#hero-image {
+    grid-row: 1/3;
+    grid-column: 2/3;
+    max-width: 80%;
+    margin: 0 auto;
+    padding-top: 32%;
+}
+
+
+
+
+
+/* body styling */
+body{
+    background-color: tan;
+}
+
+#bahaBlast {
+    font-family: SlopMex;
+    color: white;
+    font-size: 1.6em;
+    font-weight: 50;
+    font-style: italic;
+    text-align: center;
+    padding: 50px;
+}
+
+#saulAD {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 40px;
+    padding-top: 40px;
+    color: whitesmoke;
+    font-family: BurritoDePerro;
+}
+
+#saulAD h2 {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.hiddenValley {
+    display: none;
+}
+
+#saulAD.hiddenValley {
+    display: none;
+}
+
+#valley {
+    background-color: #fccc00;
+    border-radius: 35px;
+    border: 6px dotted #9f1000;
+    text-align: center;
+    font-family: "Josefin Sans";
+    margin-bottom: 30px;
+    padding-bottom: 20px;
+}
+
+#valley h1 {
+    color: #021F59;
+    font-family: BurritoDePerro;
+}
+
+#submit {
+    background-color: #9f1000;
+    color: #fccc00;
+    border-style: ridge;
+}
+
+#submit:hover {
+    background-color: #009f25;
+    color: black;
+}
+
+
+
+
+#menuHolder {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    column-gap: 2.5%;
+    row-gap: 2.5%;
+    background-color: #fccc00;
+    padding: 2.5%;
+    margin-left: 1.5%;
+    margin-right: 1.5%;
+}
+
+.food-item {
+    background-color: tan;
+    color: #021F59;
+    max-width: 100%;
+    border: 5px groove #9f1000;
+}
+
+.food-item h1 {
+    font-family: BurritoDePerro;
+    text-align: center;
+}
+
+.food-item img {
+    max-width: 80%;
+    max-height: 40%;
+    object-fit: cover;
+    /* text-align: center; */
+    display: block; 
+    margin: auto;
+    border: 3px dotted #9f1000;
+    margin-top: 10%;
+}
+
+.food-item ul {
+    padding-left: 15%;
+    padding-right: 15%;
+}
+
+.food-item ul li {
+    font-family: "Josefin Sans";
+    font-size: .85em;
+    padding-bottom: 8px;
+}
+
+.food-item button {
+    font-family: BurritoDePerro;
+    font-size: 2em;
+    background-color: #fccc00;
+    border-radius: 18px;
+    padding: 2.5%;
+    border: 3px dotted #9f1000;
+    display: block;
+    margin: auto;
+}
+
+.food-item button:hover {
+    background-color: #9f1000;
+    border: 3px dotted #fccc00;
+    color: white;
+}
+
+
+
+/* body styles for the complaint page */
+#cart-content {
+    margin-left: 1.5%;
+    margin-right: 1.5%;
+    /* background-color: #fccc00; */
+    padding: 2.5%;
+    display: grid;
+    grid-template-columns: 1fr;
+    /* grid-template-rows: 1fr; */
+    row-gap: 2.5%;
+    padding-bottom: 5%;
+    max-height: 100%;
+}
+
+/* each cart item */
+.cartBlock {
+    background-color: #fccc00;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 200px;
+    /* place-items: center; */
+
+    color: #021F59;
+    max-width: 100%;
+    border: 5px groove #9f1000;
+    font-family: BurritoDePerro;
+}
+
+.cartBlock img {
+    max-width: 80%;
+    max-height: 80%;
+    object-fit: cover;
+    margin: 0 auto;
+    border: 3px dotted #9f1000;
+    align-self: center;
+}
+
+.notesBox{
+    padding-top: 20px;
+}
+
+.notesBox h1 {
+    text-align: center;
+}
+
+.notesBox h2 {
+    text-align: center;
+    font-family: "Josefin Sans";
+}
+
+.removeFromCart {
+    font-family: BurritoDePerro;
+    font-size: 2em;
+    background-color: tan;
+    border-radius: 18px;
+    padding: 5.5%;
+    border: 3px dotted #9f1000;
+    display: block;
+    margin: auto;
+}
+
+.removeFromCart:hover {
+    background-color: #9f1000;
+    border: 3px dotted #fccc00;
+    color: white;
+}
+
+
+
+
+
+
+
+/* footer styles */
+.footerCell {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+}
+
+.footerCell img {
+    border: 6.5px groove #9f1000;
+    grid-column: 1/2;
+    grid-row: 1/3;
+    max-width: 90%;
+    margin-left: auto;
+    margin-top: auto;
+}
+
+.footerBar {
+    background-color: #fccc00;
+    grid-row: 2/3;
+    z-index: -1;
+    grid-column: 1/4;
+    height: 50%;
+    /* move to the bottom */
+    /* position: absolute; */
+    width: 100%;
+    margin-top: auto;
+}
+
+.footerText {
+    border: 6.5px groove white;
+    color: white;
+    grid-column: 2/3;
+    grid-row: 2/3;
+    background-color: #021F59;
+}
+
+.footerText p{
+    font-family: "Josefin Sans";
+    color: white;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.footerText h1 {
+    font-family: "Cedarville Cursive", cursive;
+    padding-left: 1em;
+}
+
+.footerText h2 {
+    font-family: "Cedarville Cursive", cursive;
+    text-align: center;
+}
+
+.linkCell {
+    grid-row: 2/3;
+    grid-column: 3/4;
+    margin-top: auto;
+    margin-bottom: 13%;
+    text-align: center;
+}
+
+.linkCell a {
+    padding: 25px;
+    font-size: 2em;
+    text-decoration: none;
+    color: inherit;
+    font-family: SlopMex;
+}
+
+.linkCell a:hover {
+    background-color: #9f1000;
+    color: white;
+}
